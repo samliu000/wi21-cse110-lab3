@@ -1,3 +1,6 @@
+Github Repo: https://github.com/samliu000/CSE-110-Lab-2
+Gihub User Page: https://samliu000.github.io/CSE-110-Lab-2/
+
 1. greenEggsAndHam
 2. iHateCplusplus
 3. HTMLRocks
