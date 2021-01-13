@@ -55,21 +55,22 @@
             <li>I am currently a tutor for CSE 12 which is Basic Data Structures and Object Oriented Design</li>
             
             <li>We write code like <code>System.out.println("Hello World");</code></li>   
-            <canvas id="myCanvas" width="200" height="75" style="border:1px solid #000000;">
-              <script>
-                var c = document.getElementById("myCanvas");
-                var ctx = c.getContext("2d");
-                ctx.font = "30px Arial";
-                ctx.fillText("Hello World", 10, 50);
-              </script>
-            </canvas>
-            <svg width="200" height="75">
-              <rect x="50" y="20" rx="20" ry="20" width="30" height="40"
-                    style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
-            </svg>
+            
           </ul>
+          <canvas id="myCanvas" width="200" height="75" style="border:1px solid #000000;">
+            <script>
+              var c = document.getElementById("myCanvas");
+              var ctx = c.getContext("2d");
+              ctx.font = "30px Arial";
+              ctx.fillText("Hello World", 10, 50);
+            </script>
+          </canvas>
+          <svg width="200" height="75">
+            <rect x="50" y="20" rx="20" ry="20" width="30" height="40"
+                  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+          </svg>
           <ol>
-            <strong>My favorite <span style="color:gray">Data Structures</span></strong>
+            My favorite <span style="color:gray">Data Structures</span>
             <li>Binary Tree</li>
             <li>Linked List</li>
             <li>Stack</li>
@@ -153,12 +154,10 @@
         <option value="Opera">
         <option value="Safari">
       </datalist><br>
-      <form action="/action_page.php">
-        <label for="w3review">Review of W3Schools:</label>
-        <textarea id="w3review" name="w3review" rows="4" cols="50">
-          Please leave your review here
-        </textarea>
-      </form><br>
+      <label for="w3review">Review of W3Schools:</label><br>
+      <textarea id="w3review" name="w3review" rows="4" cols="50">
+        Please leave your review here
+      </textarea><br>
       <input type="submit">
       <input type="reset">
       <input type="submit" value="Submit">
