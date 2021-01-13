@@ -1,4 +1,90 @@
-<header>
-    <h1>Samuel's Webpage
-    </h1>
-</header>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Samuel's Webpage</title>
+  </head>
+  
+  <header>
+      <title>Samuel's Webpage</title>
+      <h1>Samuel's Webpage</h1>
+      <nav>
+        <a href="https://github.com/samliu000"> Link to my Github </a>
+  </header>
+  
+  <body>
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <div> My name is <strong><em>Samuel Liu</em></strong> and I am a <b>2nd year</b> at <i>UC San Diego</i> </div>
+        <aside>
+          <h4>UC San Diego</h4>
+          <pre>The University of California, San Diego is a public land-grant research university in <br>San Diego, California.<pre>
+        </aside>
+      </section>
+      
+      <section>
+        <h2>My Involvements</h2>
+        <section>
+          <h3>CSE 12 Tutor</h3>
+          <ul> 
+            <li>I am currently a tutor for CSE 12 which is Basic Data Structures and Object Oriented Design</li>
+            <details>
+              <summary>More Info</summary>
+              <p>The instructor is Gary Gillespie and my tutor hours are Sunday 3-5PM and Tuesday 9-10AM, 6-7PM</p>
+            </details>
+            <li>We write code like <code>BinaryTree binTree = new BinaryTree(root);</code></li>   
+          </ul>
+          <ol>
+            <strong>My favorite <span style="color:gray">Data Structures</span></strong>
+            <li>Binary Tree</li>
+            <li>Linked List</li>
+            <li>Stack</li>
+          </ol>
+          <figure>
+            <img src="DSImage.png" alt="Data Structures Image">
+            <figcaption>Fig.1 - Picture with a lot of data structures</figcaption>
+          </figure>
+        </section>
+      
+    </main>
+          
+    <h2> Thanks for Visiting </h2>
+    <p> Leave some Feedback </p>
+    <form>
+    <label for="Name">Name</label>
+    <input type="text" id="other" name="gender" value="other"> <br>
+      
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br>
+    <input type="checkbox" id="college" name="college" value="college">
+    <label for="college"> I am attending college</label><br>
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"> <br>
+    <label for="week">Select a week:</label>
+    <input type="week" id="week" name="week"><br>
+    <label for="points">Points (between 0 and 10):</label>
+    <input type="range" id="points" name="points" min="0" max="10"> <br>
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile"><br>
+    <input type="reset">
+    <input type="submit" value="Submit">
+    <button type="button">Send Confirmation</button>
+  </form>
+  <template>
+    <h2>This is hidden</h2>
+  </template>
+  </body>
+  
+  <footer>
+    Contact me at slliu@ucsd.edu
+  </footer>
+</html>
