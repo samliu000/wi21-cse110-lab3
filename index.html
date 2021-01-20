@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
     <style>
       <style>
       /* unvisited link */
@@ -40,19 +42,19 @@
         <h2>About Me</h2>
         <div>
           <div id="hi">
-          <div> My name is <strong><em>Samuel Liu</em></strong> and I am a <b>2nd year</b> at <i>UC San Diego</i> </div>
-          <div> I love cooking </div>
-          <div> I love planting as well!</div>
+            <div> My name is <strong><em>Samuel Liu</em></strong> and I am a <b>2nd year</b> at <i>UC San Diego</i> </div>
+            <div> I love cooking </div>
+            <div> I love planting as well!</div>
           </div>
           <aside>
-            <h4 style="display:block" id="meh4">UC San Diego</h4>
+            <h4 style="display:block; text-decoration:underline" id="meh4">UC San Diego</h4>
             <pre>The University of California, San Diego is a public land-grant research university in <br>San Diego, California.</pre>
           </aside>
         </div>
       </section>
 
       <table>
-        <caption style="padding-top:2dp;"> Favorite Classes </caption>
+        <caption style="padding-top:2dp;color:gray"> Favorite Classes </caption>
         <colgroup>
           <col span="2" style="background-color:lightgray">
         </colgroup>
@@ -128,86 +130,86 @@
               <li>I am currently Android Tech Fellow for Codepath. I teach about 20 UCSD students Android programming.</li>
 
               <li>We code backend in java and frontend in XML but the frontend is mostly drag and drop thanks to android studios</code></li>   
-              </section>
-            </div>
           </section>
+        </div>
+      </section>
 
-        </main>
+    </main>
 
-      <h2> Thanks for Visiting </h2>
-      <p> Leave some Feedback </p>
-      <form>
-        <label for="other">Name</label>
-        <input type="text" id="other" name="gender" value="other"> <br>
+  <h2> Thanks for Visiting </h2>
+  <p> Leave some Feedback </p>
+  <form>
+    <label for="other">Name</label>
+    <input type="text" id="other" name="gender" value="other"> <br>
 
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other1" name="gender" value="other">
-        <label for="other1">Other</label><br>
-        <input type="checkbox" id="college" name="college" value="college">
-        <label for="college"> I am attending college</label><br>
-        <label for="favcolor">Select your favorite color:</label>
-        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday"><br>
-        <label for="email">Enter your email:</label>
-        <input type="email" id="email" name="email"> <br>
-        <label for="week">Select a week:</label>
-        <input type="week" id="week" name="week"><br>
-        <label for="points">Points (between 0 and 10):</label>
-        <input type="range" id="points" name="points" min="0" max="10"> <br>
-        <label for="myfile">Select a file:</label>
-        <input type="file" id="myfile" name="myfile"><br>
-        <label for="cars">Fav Food</label>
-        <select name="cars" id="cars">
-          <optgroup label="Japanese">
-            <option value="Sushi">Sushi</option>
-            <option value="Teppanyaki">Teppanyaki</option>
-          </optgroup>
-          <optgroup label="Other">
-          </optgroup>
-        </select>
-        <br><br>
-        <fieldset>
-          <legend>Optional Info:</legend>
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname"><br><br>
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname"><br><br>
-          <label for="email1">Email:</label>
-          <input type="email" id="email1" name="email"><br><br>
-          <label for="birthday1">Birthday:</label>
-          <input type="date" id="birthday1" name="birthday"><br><br>
-          <input type="submit" value="Submit">
-        </fieldset><br>
-        <label for="browser">Choose your browser from the list:</label>
-        <input list="browsers" name="browser" id="browser">
-        <datalist id="browsers">
-          <option value="Edge">
-          <option value="Firefox">
-          <option value="Chrome">
-          <option value="Opera">
-          <option value="Safari">
-        </datalist><br>
-        <label for="w3review">Review of Samuel's Website:</label><br>
-        <textarea id="w3review" name="w3review" rows="4" cols="50">
-          Please leave your review here
-        </textarea><br>
-        <input type="submit">
-        <input type="reset">
-        <input type="submit" value="Submit">
-        <button type="button">Send Confirmation</button>
-      </form>
-      <template>
-        <h2>This is hidden</h2>
-      </template>
-      <footer>
-        Contact me at slliu@ucsd.edu
-      </footer>
-      </body>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other1" name="gender" value="other">
+    <label for="other1">Other</label><br>
+    <input type="checkbox" id="college" name="college" value="college">
+    <label for="college"> I am attending college</label><br>
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br>
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"> <br>
+    <label for="week">Select a week:</label>
+    <input type="week" id="week" name="week"><br>
+    <label for="points">Points (between 0 and 10):</label>
+    <input type="range" id="points" name="points" min="0" max="10"> <br>
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile"><br>
+    <label for="cars">Fav Food</label>
+    <select name="cars" id="cars">
+      <optgroup label="Japanese">
+        <option value="Sushi">Sushi</option>
+        <option value="Teppanyaki">Teppanyaki</option>
+      </optgroup>
+      <optgroup label="Other">
+      </optgroup>
+    </select>
+    <br><br>
+    <fieldset>
+      <legend>Optional Info:</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email1">Email:</label>
+      <input type="email" id="email1" name="email"><br><br>
+      <label for="birthday1">Birthday:</label>
+      <input type="date" id="birthday1" name="birthday"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset><br>
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist><br>
+    <label for="w3review">Review of Samuel's Website:</label><br>
+    <textarea id="w3review" name="w3review" rows="4" cols="50">
+      Please leave your review here
+    </textarea><br>
+    <input type="submit">
+    <input type="reset">
+    <input type="submit" value="Submit">
+    <button type="button">Send Confirmation</button>
+  </form>
+  <template>
+    <h2>This is hidden</h2>
+  </template>
+  <footer>
+    Contact me at slliu@ucsd.edu
+  </footer>
+  </body>
 
 
-    </html>
+</html>
 
