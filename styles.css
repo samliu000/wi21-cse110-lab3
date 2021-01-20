@@ -1,14 +1,93 @@
-/* This is the css for the main title of my page */
-#mainTitle {
-    margin:0;
-    padding:5px;
-    background-color:#7fe5f0;
-    border-style:inset;
-    border-color:rgb(0,0,0);
-    border-width:4px;
-    border-radius: 6px;
-  }
-  
-  .h2 {
-  
-  }
+/* text fonts */
+* {
+    font-family: 'Open Sans';
+ }
+ 
+ a[href] {
+   background-color:#7fe5f0;
+ }
+ 
+ p::first-line {
+   color:red;
+ }
+ 
+ h1,h2 {
+   color:blue;
+ }
+ 
+ div.hey{
+   color:red;
+ }
+ 
+ /* This is the css for the main title of my page */
+ #mainTitle {
+   max-width:80%;
+   min-width:40%;
+   margin-left:10%;
+   margin-right:10%;
+   padding:5px;
+   background-color:#7fe5f0;
+   border-style:inset;
+   border-color:rgb(0,0,0);
+   border-width:4px;
+   border-radius: 5px;
+   text-align:center;
+   position:static;
+ }
+ 
+ nav {
+   position:relative;
+   left: 45%;
+ }
+ 
+ section > div {
+   color:gray;
+ }
+ 
+ div + div {
+   color:red;
+ }
+ 
+ div~div {
+   background-color:lightgray;
+ }
+ 
+ #hi {
+   display:flex;
+   flex-direction:row;
+   flex-wrap:nowrap;
+   justify-content:space-between;
+ }
+ 
+ @media only screen and (max-width: 600px) {
+   h1 {
+     text-color:red;
+   }
+ }
+ 
+ .grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-gap: 1rem;
+ }
+ .center {
+   margin: auto;
+   width: 50%;
+   border: 3px solid green;
+   padding: 10px;
+ }
+ 
+ #involvements{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-gap: 1rem;
+   grid-template-rows:auto;
+ }
+ 
+ section section {
+   background-color:#7fe5f0;
+   border-style:inset;
+   border-color:rgb(0,0,0);
+   border-width:4px;
+   border-radius: 5px;
+ }
