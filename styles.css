@@ -3,6 +3,22 @@
     font-family: 'Open Sans';
  }
  
+ a[href] {
+   background-color:#7fe5f0;
+ }
+ 
+ p::first-line {
+   color:red;
+ }
+ 
+ h1,h2 {
+   color:blue;
+ }
+ 
+ div.hey{
+   color:red;
+ }
+ 
  /* This is the css for the main title of my page */
  #mainTitle {
    max-width:80%;
@@ -18,7 +34,17 @@
    text-align:center;
  }
  
+ section > div {
+   color:gray;
+ }
  
+ div + div {
+   color:red;
+ }
+ 
+ div~div {
+   background-color:lightgray;
+ }
  
  #hi {
    display:flex;
@@ -40,7 +66,7 @@
  }
  .center {
    margin: auto;
-   width: 51%;
+   width: 50%;
    border: 3px solid green;
    padding: 10px;
  }
