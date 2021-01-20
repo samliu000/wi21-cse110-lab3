@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      <style>
+      /* unvisited link */
+      a:link {
+        color: red;
+      }
+
+      /* visited link */
+      a:visited {
+        color: hsl(0,0,0);
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+    </style>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
     <title>Samuel's Webpage</title>
   </head>
-  
+
   <body>
     <header>
       <h1 id="mainTitle">Samuel's Webpage</h1>
@@ -16,15 +38,21 @@
     <main>
       <section>
         <h2>About Me</h2>
-        <div> My name is <strong><em>Samuel Liu</em></strong> and I am a <b>2nd year</b> at <i>UC San Diego</i> </div>
-        <aside>
-          <h4>UC San Diego</h4>
-          <pre>The University of California, San Diego is a public land-grant research university in <br>San Diego, California.</pre>
-        </aside>
+        <div>
+          <div id="hi">
+          <div> My name is <strong><em>Samuel Liu</em></strong> and I am a <b>2nd year</b> at <i>UC San Diego</i> </div>
+          <div> I love cooking </div>
+          <div> I love planting as well!</div>
+          </div>
+          <aside>
+            <h4 style="display:block" id="meh4">UC San Diego</h4>
+            <pre>The University of California, San Diego is a public land-grant research university in <br>San Diego, California.</pre>
+          </aside>
+        </div>
       </section>
 
       <table>
-        <caption> Favorite Classes </caption>
+        <caption style="padding-top:2dp;"> Favorite Classes </caption>
         <colgroup>
           <col span="2" style="background-color:lightgray">
         </colgroup>
@@ -48,128 +76,138 @@
 
       <section>
         <h2>My Involvements</h2>
-        <section>
-          <h3>CSE 12 Tutor</h3>
-          <ul> 
-            <li>I am currently a tutor for CSE 12 which is Basic Data Structures and Object Oriented Design</li>
+        <div id="involvements">
+          <section>
+            <h3>CSE 12 Tutor</h3>
+            <ul> 
+              <li>I am currently a tutor for CSE 12 which is Basic Data Structures and Object Oriented Design</li>
 
-            <li>We write code like <code>System.out.println("Hello World");</code></li>   
+              <li>We write code like <code>System.out.println("Hello World");</code></li>   
 
-          </ul>
-          <canvas id="myCanvas" width="200" height="75" style="border:1px solid #000000;">
-            <script>
-              var c = document.getElementById("myCanvas");
-              var ctx = c.getContext("2d");
-              ctx.font = "30px Arial";
-              ctx.fillText("Hello World", 10, 50);
-            </script>
-          </canvas>
-          <svg width="200" height="75">
-            <rect x="50" y="20" rx="20" ry="20" width="30" height="40"
-                  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
-          </svg>
-          <h3>My favorite Data Structures</h3>
-          <ol>
-            <li>Binary Tree</li>
-            <li>Linked List</li>
-            <li>Stack</li>
-          </ol>
-          <figure>
-            <picture>
-              <source media="(min-width:650px)" srcset="DSImage.png">
-              <img src="DSImage.png" alt="Data Structures Image">
-            </picture>
-            <figcaption>Fig.1 - Picture with a lot of data structures</figcaption>
-          </figure>
-          <details>
-            <summary>More Info</summary>
-            <p>The instructor is <span style="color:gray">Gary Gillespie</span> and my tutor hours are Sunday 3-5PM and Tuesday 9-10AM, 6-7PM</p>
-            <iframe src="http://ieng6.ucsd.edu/~cs12x/" title="CSE 12 Page"></iframe><br>
-            <audio controls>
-              <source src="horse.ogg" type="audio/ogg">
-            </audio><br>
-            <video width="320" height="240" controls>
-              <source src="movie.mp4" type="video/mp4">
-            </video>
-          </details>
-        </section>
-      </section>
-    </main>
+            </ul>
+            <canvas id="myCanvas" width="200" height="75" style="border:1px solid #000000;">
+              <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.font = "30px Arial";
+                ctx.fillText("Hello World", 10, 50);
+              </script>
+            </canvas>
+            <svg width="200" height="75">
+              <rect x="50" y="20" rx="20" ry="20" width="30" height="40"
+                    style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+            </svg>
+            <h3>My favorite Data Structures</h3>
+            <ol>
+              <li>Binary Tree</li>
+              <li>Linked List</li>
+              <li>Stack</li>
+            </ol>
+            <figure>
+              <picture>
+                <source media="(min-width:650px)" srcset="DSImage.png">
+                <img src="DSImage.png" alt="Data Structures Image">
+              </picture>
+              <figcaption>Fig.1 - Picture with a lot of data structures</figcaption>
+            </figure>
+            <details>
+              <summary>More Info</summary>
+              <p>The instructor is <span style="color:gray">Gary Gillespie</span> and my tutor hours are Sunday 3-5PM and Tuesday 9-10AM, 6-7PM</p>
+              <iframe src="http://ieng6.ucsd.edu/~cs12x/" title="CSE 12 Page"></iframe><br>
+              <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+              </audio><br>
+              <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+              </video>
+            </details>
+          </section>
+          <section>
+            <h3>Lead Android Tech Fellow</h3>
+            <ul> 
+              <li>I am currently Android Tech Fellow for Codepath. I teach about 20 UCSD students Android programming.</li>
 
-    <h2> Thanks for Visiting </h2>
-    <p> Leave some Feedback </p>
-    <form>
-      <label for="other">Name</label>
-      <input type="text" id="other" name="gender" value="other"> <br>
+              <li>We code backend in java and frontend in XML but the frontend is mostly drag and drop thanks to android studios</code></li>   
+              </section>
+            </div>
+          </section>
 
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Male</label><br>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label><br>
-      <input type="radio" id="other1" name="gender" value="other">
-      <label for="other1">Other</label><br>
-      <input type="checkbox" id="college" name="college" value="college">
-      <label for="college"> I am attending college</label><br>
-      <label for="favcolor">Select your favorite color:</label>
-      <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
-      <label for="birthday">Birthday:</label>
-      <input type="date" id="birthday" name="birthday"><br>
-      <label for="email">Enter your email:</label>
-      <input type="email" id="email" name="email"> <br>
-      <label for="week">Select a week:</label>
-      <input type="week" id="week" name="week"><br>
-      <label for="points">Points (between 0 and 10):</label>
-      <input type="range" id="points" name="points" min="0" max="10"> <br>
-      <label for="myfile">Select a file:</label>
-      <input type="file" id="myfile" name="myfile"><br>
-      <label for="cars">Fav Food</label>
-      <select name="cars" id="cars">
-        <optgroup label="Japanese">
-          <option value="Sushi">Sushi</option>
-          <option value="Teppanyaki">Teppanyaki</option>
-        </optgroup>
-        <optgroup label="Other">
-        </optgroup>
-      </select>
-      <br><br>
-      <fieldset>
-        <legend>Optional Info:</legend>
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="email1">Email:</label>
-        <input type="email" id="email1" name="email"><br><br>
-        <label for="birthday1">Birthday:</label>
-        <input type="date" id="birthday1" name="birthday"><br><br>
+        </main>
+
+      <h2> Thanks for Visiting </h2>
+      <p> Leave some Feedback </p>
+      <form>
+        <label for="other">Name</label>
+        <input type="text" id="other" name="gender" value="other"> <br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other1" name="gender" value="other">
+        <label for="other1">Other</label><br>
+        <input type="checkbox" id="college" name="college" value="college">
+        <label for="college"> I am attending college</label><br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"> <br>
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week"><br>
+        <label for="points">Points (between 0 and 10):</label>
+        <input type="range" id="points" name="points" min="0" max="10"> <br>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br>
+        <label for="cars">Fav Food</label>
+        <select name="cars" id="cars">
+          <optgroup label="Japanese">
+            <option value="Sushi">Sushi</option>
+            <option value="Teppanyaki">Teppanyaki</option>
+          </optgroup>
+          <optgroup label="Other">
+          </optgroup>
+        </select>
+        <br><br>
+        <fieldset>
+          <legend>Optional Info:</legend>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="email1">Email:</label>
+          <input type="email" id="email1" name="email"><br><br>
+          <label for="birthday1">Birthday:</label>
+          <input type="date" id="birthday1" name="birthday"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset><br>
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist><br>
+        <label for="w3review">Review of Samuel's Website:</label><br>
+        <textarea id="w3review" name="w3review" rows="4" cols="50">
+          Please leave your review here
+        </textarea><br>
+        <input type="submit">
+        <input type="reset">
         <input type="submit" value="Submit">
-      </fieldset><br>
-      <label for="browser">Choose your browser from the list:</label>
-      <input list="browsers" name="browser" id="browser">
-      <datalist id="browsers">
-        <option value="Edge">
-        <option value="Firefox">
-        <option value="Chrome">
-        <option value="Opera">
-        <option value="Safari">
-      </datalist><br>
-      <label for="w3review">Review of Samuel's Website:</label><br>
-      <textarea id="w3review" name="w3review" rows="4" cols="50">
-        Please leave your review here
-      </textarea><br>
-      <input type="submit">
-      <input type="reset">
-      <input type="submit" value="Submit">
-      <button type="button">Send Confirmation</button>
-    </form>
-    <template>
-      <h2>This is hidden</h2>
-    </template>
-    <footer>
-      Contact me at slliu@ucsd.edu
-    </footer>
-  </body>
+        <button type="button">Send Confirmation</button>
+      </form>
+      <template>
+        <h2>This is hidden</h2>
+      </template>
+      <footer>
+        Contact me at slliu@ucsd.edu
+      </footer>
+      </body>
 
 
-</html>
+    </html>
 
